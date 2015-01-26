@@ -1,0 +1,9 @@
+
+MKDIR_P = mkdir -p
+
+INTROSPECTION_SCANNER=$(shell pkg-config --variable=g_ir_scanner gobject-introspection-1.0)
+INTROSPECTION_COMPILER=$(shell pkg-config --variable=g_ir_compiler gobject-introspection-1.0)
+INTROSPECTION_GENERATE=$(shell pkg-config --variable=g_ir_generate gobject-introspection-1.0)
+INTROSPECTION_MAKEFILE = $(shell pkg-config --variable=datadir gobject-introspection-1.0)/gobject-introspection-1.0/Makefile.introspection
+
+include $(INTROSPECTION_MAKEFILE)

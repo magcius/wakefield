@@ -1,0 +1,9 @@
+\#*\#
+*~
+*.o
+*.gir
+*.typelib
+*.so
+test-compositor
+test-client
+test-client-2
