@@ -242,7 +242,7 @@ window_next_buffer(struct window *window)
 	if (!buffer->buffer) {
 		ret = create_shm_buffer(window->display, buffer,
 					window->width, window->height,
-					WL_SHM_FORMAT_XRGB8888);
+					WL_SHM_FORMAT_ARGB8888);
 
 		if (ret < 0)
 			return NULL;
